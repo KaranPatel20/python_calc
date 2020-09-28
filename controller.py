@@ -15,14 +15,14 @@ class Controller:
         if self._view.getDisplayText() == ERROR_MSG:
             self._view.clearDisplay()
 
-        expression = self._view.getDisplayText() + sub_exp  1+2
+        expression = self._view.getDisplayText() + sub_exp  
         self._view.setDisplayText(expression)
     def _buildExpression(self, sub_exp):
         """Build expression."""
         if self._view.getDisplayText() == ERROR_MSG:
             self._view.clearDisplay()
 
-        expression = self._view.getDisplayText() + sub_exp  1+2
+        expression = self._view.getDisplayText() + sub_exp 
         self._view.setDisplayText(expression)
     def _connectSignals(self):
         """Connect signals and slots."""
