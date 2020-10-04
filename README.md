@@ -14,7 +14,7 @@ Create test.py, import sys package. Now import QApplication, QLabel and Qwidget 
 3. Print a hello message (This is just for checking) and then end the window using show().
 
 ### Step-2:
-Create view.py, import Ot, QMainWindow, QLineEdit, QGridLayout, QPushButton, QVBoxLayout and Qwidget into test.py from PyQt5.QtWidgets.
+Create view.py, import Qt, QMainWindow, QLineEdit, QGridLayout, QPushButton, QVBoxLayout and Qwidget into view.py from PyQt5.QtWidgets.
 	
 1. Now, construct class GUI which calls constructor of QMainWindow.
 2. Using different widget and layout functions, define the calculator's look and layout as needed.
@@ -27,5 +27,22 @@ Create main.py and import sys package.
 	
 1. Define the main function.
 2. Create and call an instance of QApplication.
-3. Show the GUI 
+3. Show the GUI using GUI() and show() methods.
+
+### Step-4:
+Create model.py and add the following in the module.
+
+1. Define evaluateExpression method in it.
+2. Pass the expression in the above listed method and check whether it throws any exception or not, if not then print the result.
+
+### Step-5:
+Create controller.py. In this module add the following things:
+
+1. Define a class named Controller.
+2. Build a constructor which calls model and view parameters in it.
+3. Define 3 functions in it:
+	1. calculateResult: for evaluating result of expression.
+	2. buildExpression: for validating and building the expression.
+	3. connectSignals: to connect the expression through the buttons we defined in Step-3.
+
 
